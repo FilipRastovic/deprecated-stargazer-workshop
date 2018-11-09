@@ -9103,8 +9103,9 @@ html, body {
   text-decoration: none; }
 
 .contact {
-  border: 3px solid #FFFC31;
-  border-radius: 10px; }
+  border: 3px solid #FFFC31 !important;
+  border-radius: 10px;
+  color: #FFFC31 !important; }
 
 .navbar {
   margin-bottom: 0px;
@@ -9117,14 +9118,16 @@ html, body {
 .navbar-right {
   padding-right: 60px;
   padding-top: 25px; }
-  .navbar-right a {
+  .navbar-right li a {
     color: white !important;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase; }
-  .navbar-right a:hover {
+    .navbar-right li a.contact {
+      color: #FFFC31 !important; }
+  .navbar-right li.current-menu-item a {
     color: #FFFC31 !important; }
-  .navbar-right #contact {
+  .navbar-right a:hover {
     color: #FFFC31 !important; }
 
 .navbar-section {

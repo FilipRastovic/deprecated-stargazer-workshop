@@ -22,8 +22,9 @@
  }
  
  .contact {
-     border: 3px solid $yellow-color;
+     border: 3px solid $yellow-color !important;
      border-radius: 10px;
+     color: $yellow-color !important;
  }
  
  .navbar {
@@ -40,18 +41,25 @@
  .navbar-right {
      padding-right: 60px;
      padding-top: 25px;
-     a {
+     li a {
          color: white !important;
          font-weight: 700;
          font-size: 14px;
          text-transform: uppercase;
+
+         
+
+         &.contact {
+             color: $yellow-color !important;
+         }
      }
+
+     li.current-menu-item a {
+        color: $yellow-color !important;
+    }
  
      a:hover {
          color: $yellow-color !important;
-     }//a
-
-     #contact {
-        color: $yellow-color !important;
      }
  }
+
