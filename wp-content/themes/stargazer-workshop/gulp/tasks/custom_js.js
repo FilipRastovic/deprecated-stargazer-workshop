@@ -27,7 +27,7 @@ module.exports = function(){
     .pipe(jshint.reporter('fail'))
     .pipe(concat('custom.js'))
     .pipe(wrapper({
-      header : '$(document).ready(function(){',
+      header : 'jQuery(document).ready(function($){',
       footer : '});'
     }))
     .pipe(gulp.dest('.resources/js/concat'));

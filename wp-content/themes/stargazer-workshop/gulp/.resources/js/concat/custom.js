@@ -1,52 +1,4 @@
-$(document).ready(function(){
-$("#portfolio").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#portfolio-section").offset().top
-    }, 2000);
-});
-
-$("#testimonials").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#testimonials-section").offset().top
-    }, 2000);
-});
-
-$("#contact").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#contact-section").offset().top
-    }, 2000);
-});
-
-$("#audit").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#contact-section").offset().top
-    }, 2000);
-});
-
-$("#portfolio-bot").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#portfolio-section").offset().top
-    }, 2000);
-});
-
-$("#testimonials-bot").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#testimonials-section").offset().top
-    }, 2000);
-});
-
-$("#contact-bot").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#contact-section").offset().top
-    }, 2000);
-});
-
-$("#audit-bot").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $("#contact-section").offset().top
-    }, 2000);
-});
-
+jQuery(document).ready(function($){
 /* Open */
 $("#toggle-button").click(function() {
     console.log('testarino');
@@ -58,7 +10,8 @@ $(".overlay-close").click(function() {
     $(".overlay").removeClass("overlay-open");
 });
 // When the user scrolls down 20px from the top of the document, show the button
-$('#myBtn').click(function(){
+
+jQuery('#myBtn').click(function(){
     topFunction();
     console.log('asd');
 });
@@ -79,29 +32,30 @@ function topFunction() {
         scrollTop: $("#hero-section").offset().top
     }, 1300);
 }
-var countDownDate = new Date("Nov 10, 2018 15:37:25").getTime();
 
-var x = setInterval(function() {
-    var now = new Date().getTime();
+// var countDownDate = new Date("Nov 10, 2018 15:37:25").getTime();
 
-    var distance = countDownDate - now;
+// var x = setInterval(function() {
+//     var now = new Date().getTime();
 
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//     var distance = countDownDate - now;
 
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    document.getElementById("demo-2").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+//     // Time calculations for days, hours, minutes and seconds
+//     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // If the count down is finished, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-        document.getElementById("demo-2").innerHTML = "EXPIRED";
-    }
-}, 1000);
+//     document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+//     document.getElementById("demo-2").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+//     // If the count down is finished, write some text 
+//     if (distance < 0) {
+//         clearInterval(x);
+//         document.getElementById("demo").innerHTML = "EXPIRED";
+//         document.getElementById("demo-2").innerHTML = "EXPIRED";
+//     }
+// }, 1000);
 
 $(function () {
     $('[data-toggle="tooltip-1"]').tooltip();
@@ -109,6 +63,7 @@ $(function () {
     $('[data-toggle="tooltip-3"]').tooltip();
     $('[data-toggle="tooltip-4"]').tooltip();
   });
+
 $(document).ready(function() {
 	$('.popup-gallery').magnificPopup({
 		delegate: 'a.popup-gallery',

@@ -1,5 +1,6 @@
 // When the user scrolls down 20px from the top of the document, show the button
-$('#myBtn').click(function(){
+
+jQuery('#myBtn').click(function(){
     topFunction();
     console.log('asd');
 });

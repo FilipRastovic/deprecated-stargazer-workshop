@@ -1,8 +1,7 @@
 {
   "sass" : {
     "concat" : [
-      "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss",
-      "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
+      "node_modules/bootstrap/scss/bootstrap.scss",
       "node_modules/font-awesome/css/font-awesome.css",
       "node_modules/magnific-popup/dist/magnific-popup.css",
       "build/sass/_variables.scss",
@@ -17,7 +16,7 @@
     "concat" : {
       "vendor" : [
        
-        "node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
+        "node_modules/bootstrap/dist/js/bootstrap.js",
         "node_modules/jquery-validation/dist/jquery.validate.js",
         "node_modules/jquery-validation/dist/additional-methods.js",
         "node_modules/magnific-popup/dist/jquery.magnific-popup.min.js"

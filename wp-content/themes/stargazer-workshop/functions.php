@@ -121,9 +121,10 @@ function stargazer_workshop_scripts() {
 	wp_enqueue_style( 'stargazer-workshop-style', get_stylesheet_uri() );
 
 	// New Scripts by filip
-	wp_enqueue_script('jquery');
+	
 	wp_enqueue_style('custom.min.css', get_template_directory_uri() . '/assets/css/custom.min.css');
 	wp_enqueue_style('animate.min.css', get_template_directory_uri() . '/assets/css/animate.min.css');
+	wp_enqueue_script('jquery');
 	wp_enqueue_script('custom.min.js', get_template_directory_uri(). '/assets/js/custom.min.js');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

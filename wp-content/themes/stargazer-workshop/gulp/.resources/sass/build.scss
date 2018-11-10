@@ -1,6 +1,4 @@
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-sprockets.scss";
-
-@import "../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2706,24 +2704,6 @@ img.mfp-img {
 
 @import "../../build/sass/base/_utilities.scss";
 
-@import "../../build/sass/components/_bot-form.scss";
-
 @import "../../build/sass/components/_buttons.scss";
 
-@import "../../build/sass/components/_form.scss";
-
 @import "../../build/sass/components/_scrollTop.scss";
-
-@import "../../build/sass/components/_venn.scss";
-
-@import "../../build/sass/components/_vertical-line.scss";
-
-@import "../../build/sass/layout/_footer.scss";
-
-@import "../../build/sass/layout/_navbar-desktop.scss";
-
-@import "../../build/sass/layout/_navbar-mobile.scss";
-
-@import "../../build/sass/pages/_about.scss";
-
-@import "../../build/sass/pages/_home.scss";
