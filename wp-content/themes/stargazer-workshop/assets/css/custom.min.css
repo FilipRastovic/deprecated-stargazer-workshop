@@ -9044,6 +9044,25 @@ img.mfp-img {
     opacity: 1;
     transform: translate(0); } }
 
+.btn-primary {
+  border-radius: 0px;
+  background-color: transparent !important;
+  color: #007bff;
+  padding: 17px 55px; }
+
+.btn-scifi {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-transform: uppercase; }
+
+button {
+  margin: 0;
+  padding: 0; }
+
+.row {
+  margin-top: 20px; }
+
 #myBtn {
   display: none;
   /* Hidden by default */
@@ -9075,3 +9094,48 @@ img.mfp-img {
 #myBtn:hover {
   background-color: #555;
   /* Add a dark-grey background on hover */ }
+
+.about-image {
+  margin-top: 8rem; }
+
+header.masthead {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: black; }
+  header.masthead .header-content {
+    max-width: 600px;
+    margin-bottom: 100px;
+    text-align: center; }
+    header.masthead .header-content h1 {
+      font-size: 30px; }
+  header.masthead .device-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto; }
+    header.masthead .device-container .screen img {
+      border-radius: 3px; }
+  @media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 775px;
+      padding-top: 0;
+      padding-bottom: 0; }
+      header.masthead .header-content {
+        margin-bottom: 0;
+        text-align: left; }
+        header.masthead .header-content h1 {
+          font-size: 50px; }
+      header.masthead .device-container {
+        max-width: 325px; } }
+
+.navbar-light .navbar-brand {
+  color: white; }
+
+.scifi-panel {
+  border-radius: 6px;
+  width: 100%; }
+  .scifi-panel-header {
+    height: 356px; }
