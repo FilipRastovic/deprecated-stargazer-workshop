@@ -2348,9 +2348,17 @@
 
 @import "../../build/sass/global/typography.scss";
 
+@import "../../build/sass/components/char.scss";
+
 @import "../../build/sass/components/highlight-line.scss";
 
 @import "../../build/sass/components/navbar.scss";
+
+@import "../../build/sass/components/noise.scss";
+
+@import "../../build/sass/components/rotating-planet.scss";
+
+@import "../../build/sass/components/ui.scss";
 
 @import "../../build/sass/sections/about.scss";
 

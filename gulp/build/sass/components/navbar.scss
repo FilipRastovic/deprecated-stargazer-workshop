@@ -2,7 +2,7 @@
 #mainNav {
   border-color: fade-out($theme-primary, .95);
   background-color: $black;
-  border-bottom: 8px solid $yellow;
+  border-bottom: 8px solid $theme-primary;
   @include transition-all;
   @include heading-font;
   .navbar-brand {
@@ -46,7 +46,7 @@
   @media (min-width: 992px) {
       border-color: $black;
       background-color: $black;
-      border-bottom: 8px solid $yellow;
+      border-bottom: 8px solid $theme-primary;
       .navbar-brand {
           font-size: 2.45rem;
          // color: fade($black, 70%);
