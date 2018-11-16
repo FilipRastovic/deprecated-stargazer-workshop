@@ -1,0 +1,22 @@
+.newsletter {
+  input {
+    padding: 24px 28px;
+    color: $theme-primary;
+    background-color: transparent;
+    border: 2px solid $theme-primary;
+    border-radius: 0px;
+
+    &::placeholder {
+      color: $theme-primary;
+    }
+  }
+
+  p {
+    color: white;
+    font-weight: 900;
+  }
+}
+
+button.form-control {
+  height: calc(2.25rem + 16px) !important;
+}

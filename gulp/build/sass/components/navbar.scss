@@ -1,0 +1,85 @@
+// Styling for the navbar
+#mainNav {
+  border-color: fade-out($theme-primary, .95);
+  background-color: $black;
+  border-bottom: 8px solid $yellow;
+  @include transition-all;
+  @include heading-font;
+  .navbar-brand {
+    
+      color: $theme-primary;
+      text-transform: uppercase;
+      @include heading-font;
+      font-size: 1rem;
+      &:hover,
+      &:focus {
+          color: darken($theme-primary, 10%);
+      }
+  }
+  .navbar-toggler {
+      font-size: 12px;
+      padding: 8px 10px;
+      color: $theme-primary;
+  }
+  .navbar-nav {
+      > li {
+          > a {
+              font-size: 11px;
+              @include alt-font;
+              &.active {
+                  color: $theme-primary !important;
+                  background-color: transparent;
+                  &:hover {
+                      background-color: transparent;
+                  }
+              }
+          }
+          > a,
+          > a:focus {
+              color: $theme-primary;
+              &:hover {
+                  color: $theme-primary;
+              }
+          }
+      }
+  }
+  @media (min-width: 992px) {
+      border-color: $black;
+      background-color: $black;
+      border-bottom: 8px solid $yellow;
+      .navbar-brand {
+          font-size: 2.45rem;
+         // color: fade($black, 70%);
+          &:hover,
+          &:focus {
+              //color: $black;a
+          }
+      }
+      .navbar-nav > li > a,
+      .navbar-nav > li > a:focus {
+          color: $theme-primary;
+          
+          &:hover {
+            color: fade-out($theme-primary, .3);
+          }
+      }
+      &.navbar-shrink {
+          border-color: fade-out($theme-primary, .9);
+          background-color: $black;
+          .navbar-brand {
+              color: $theme-primary;
+              &:hover,
+              &:focus {
+                  color: $theme-primary;
+              }
+          }
+          .navbar-nav > li > a,
+          .navbar-nav > li > a:focus {
+              color: $theme-primary;
+              &:hover {
+                  color: $theme-primary;
+              }
+          }
+      }
+  }
+}

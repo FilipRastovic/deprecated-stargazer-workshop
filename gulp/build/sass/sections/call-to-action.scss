@@ -1,0 +1,38 @@
+.call-to-action,
+.mobile-version {
+  .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+
+    p {
+      font-weight: 900;
+      color: white;
+      letter-spacing: 1px;
+      font-size: 18px;
+    }
+
+    @media (max-width: 990) {
+      text-align: center;
+    }
+  }
+}
+
+.call-to-action {
+  @media(max-width: 990px) {
+    .row {
+      /* Setup Flexbox */
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      /* Reverse Column Order */
+      -webkit-flex-flow: column-reverse;
+      flex-flow: column-reverse;
+
+      .header-content {
+        text-align: center;
+      }
+    }
+  }
+}
