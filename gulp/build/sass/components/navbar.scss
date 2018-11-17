@@ -2,7 +2,6 @@
 #mainNav {
   border-color: fade-out($theme-primary, .95);
   background-color: $black;
-  border-bottom: 8px solid $theme-primary;
   @include transition-all;
   @include heading-font;
   .navbar-brand {
@@ -10,7 +9,7 @@
       color: $theme-primary;
       text-transform: uppercase;
       @include heading-font;
-      font-size: 1rem;
+      font-size: .1rem;
       &:hover,
       &:focus {
           color: darken($theme-primary, 10%);
@@ -46,9 +45,8 @@
   @media (min-width: 992px) {
       border-color: $black;
       background-color: $black;
-      border-bottom: 8px solid $theme-primary;
       .navbar-brand {
-          font-size: 2.45rem;
+          font-size: 1rem;
          // color: fade($black, 70%);
           &:hover,
           &:focus {

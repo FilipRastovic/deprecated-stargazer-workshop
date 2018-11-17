@@ -6,15 +6,15 @@
 .btn {
   color: $black;
   background: $theme-primary;
-  border-radius: 0px;
+  border-radius: 5px;
   padding: 12px 28px;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 .btn-outline {
   background: transparent;
   color: $theme-primary;
-  border: 2px solid;
+  border: 1px solid;
   border-color: $theme-primary;
   &:hover,
   &:focus,
