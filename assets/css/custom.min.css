@@ -8671,7 +8671,8 @@ body {
   height: 100%; }
 
 body {
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif'; }
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  background: #141414; }
 
 a {
   color: white;
@@ -8695,14 +8696,14 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px; }
 
 h1, h2, h3 {
-  font-weight: 300; }
+  font-weight: 900; }
 
 h2 {
   font-size: 1.4rem; }
 
 h3 {
   font-size: 1.3rem;
-  margin: 1rem 0rem; }
+  margin: 1rem 0rem 0rem 1.4rem; }
 
 .card {
   border: 1px solid #545454;
@@ -8719,10 +8720,16 @@ h3 {
     text-transform: uppercase; }
   .card .card-body {
     background: #141414;
-    padding: .4rem 0rem; }
+    padding: .4rem 1rem 2rem 1.4rem;
+    line-height: 150%; }
+    .card .card-body a {
+      color: white;
+      font-weight: 800; }
+      .card .card-body a:hover {
+        color: #cccccc; }
   .card .card-footer {
     border-top: 1px solid #545454;
-    padding: 1rem 0rem; }
+    padding: .4rem 1rem 1rem 1.4rem; }
   .card a {
     color: #c7c7c7;
     text-decoration: underline;
@@ -8784,7 +8791,8 @@ h3 {
   @media (min-width: 992px) {
     #mainNav {
       border-color: #141414;
-      background-color: #141414; }
+      background-color: #141414;
+      border-bottom: 1px solid #7c7c7c; }
       #mainNav .navbar-brand {
         font-size: 1rem; }
       #mainNav .navbar-nav > li > a,
@@ -9043,6 +9051,10 @@ header.masthead {
         header.masthead .header-content h1 {
           font-size: 50px;
           margin-bottom: 4rem; } }
+  @media (min-width: 992px) {
+    header.masthead--nfs {
+      min-height: 750px;
+      padding-top: 100px; } }
 
 .newsletter {
   padding: 10rem 0rem; }
@@ -9060,3 +9072,8 @@ header.masthead {
 
 button.form-control {
   height: calc(2.25rem + 16px) !important; }
+
+.theme-action-btn {
+  padding: 0.75rem 1.25rem;
+  display: block;
+  margin-bottom: 20px; }

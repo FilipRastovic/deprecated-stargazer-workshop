@@ -11,7 +11,6 @@ header.masthead {
       text-align: center;
       h1 {
           font-size: 30px;
-          
       }
 
       p {
@@ -42,5 +41,12 @@ header.masthead {
               margin-bottom: 4rem;
           }
       }
+  }
+
+  &--nfs {
+    @media (min-width: 992px) {
+      min-height: 750px;
+      padding-top: 100px;
+    }
   }
 }

@@ -20,12 +20,21 @@
 
   .card-body {
     background: $black;
-    padding: .4rem 0rem;
+    padding: .4rem 1rem 2rem 1.4rem;
+    line-height: 150%;
+
+    a {
+      color: white;
+      font-weight: 800;
+      &:hover {
+        color: darken(white, 20%);
+      }
+    }
   }
 
   .card-footer {
     border-top: 1px solid #545454;
-    padding: 1rem 0rem;
+    padding: .4rem 1rem 1rem 1.4rem;
   }
 
   a {
@@ -36,9 +45,5 @@
     &:hover {
       color: white;
     }
-  }
-
-  @media (min-width: 990px) {
-
   }
 }
