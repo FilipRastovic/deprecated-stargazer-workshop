@@ -1,6 +1,6 @@
 .card {
   border: 1px solid #545454;
-  background-color: $black;
+  background-color: $theme-primary;
   margin-bottom: 45px;
 
   .card-img-top{
@@ -12,22 +12,21 @@
   }
 
   .card-header {
-    background: $black;
+    background: $theme-primary;
     padding: .4rem 0rem;
     font-size: 0.8rem;
     text-transform: uppercase;
   }
 
   .card-body {
-    background: $black;
-    padding: .4rem 1rem 2rem 1.4rem;
+    background: $theme-primary;
     line-height: 150%;
 
     a {
-      color: white;
+      color: $black;
       font-weight: 800;
       &:hover {
-        color: darken(white, 20%);
+        color: lighten($black, 20%);
       }
     }
   }
@@ -38,12 +37,13 @@
   }
 
   a {
-    color: rgb(199, 199, 199);
+    color: $black;
     text-decoration: underline;
     text-transform: uppercase;
+    font-weight: 900;
 
     &:hover {
-      color: white;
+      color: $black;
     }
   }
 }

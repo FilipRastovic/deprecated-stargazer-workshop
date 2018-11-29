@@ -8,20 +8,21 @@
   background: $theme-primary;
   border-radius: 5px;
   padding: 12px 28px;
-  font-weight: 300;
+  font-weight: 400;
+  box-shadow: $material-shadow-1;
 }
 
 .btn-outline {
   background: transparent;
-  color: $theme-primary;
+  color: $black;
   border: 1px solid;
-  border-color: $theme-primary;
+  border-color: $black;
   &:hover,
   &:focus,
   &:active,
   &.active {
       color: $black;
-      border-color: $theme-primary;
-      background-color: $theme-primary;
+      border-color: $black;
+      box-shadow: $material-shadow-1-hovered;
   }
 }

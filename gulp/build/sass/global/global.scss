@@ -7,7 +7,7 @@ body {
 
 body {
     @include body-font;
-    background: $black;
+    background: $theme-primary;
 }
 
 a {
